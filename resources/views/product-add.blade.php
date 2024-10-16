@@ -33,10 +33,15 @@
 
                     <div class="mb-3">
                         <label for="formGroupExampleInput" class="form-label">Description</label>
-                        <input type="text" name="description" value="{{old('description')}}" class="form-control" id="formGroupExampleInput" placeholder="Description">
+                        <textarea name="description" class="form-control" id="formGroupExampleInput" placeholder="Description"></textarea>
                         @error('description')
                             <span class="text-danger">{{$message}}</span>
                         @enderror
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="image">Image:</label>
+                        <input type="file" name="image" id="image">
                     </div>
 
                     <button type="submit" class="btn btn-primary">Save</button>

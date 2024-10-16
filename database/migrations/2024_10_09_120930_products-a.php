@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->decimal('price');
             $table->text('description')->nullable();
+            $table->string('image');
             $table->timestamps();
         });
     }
@@ -25,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('producta');
     }
 };

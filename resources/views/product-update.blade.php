@@ -34,7 +34,7 @@
 
                     <div class="mb-3">
                         <label for="formGroupExampleInput" class="form-label">Description</label>
-                        <input type="text" name="description" value="{{$product->description}}" class="form-control" id="formGroupExampleInput" placeholder="Description">
+                        <textarea name="description" class="form-control" id="formGroupExampleInput" placeholder="Description">{{$product->description}}</textarea>
                         @error('description')
                             <span class="text-danger">{{$message}}</span>
                         @enderror
